@@ -1,46 +1,47 @@
-In challenge one; ChaiCalculator:
+Chai & Boda Utility Tools
 
-When you run the code, it will ask "Enter number of cups:"
-Type in a number (e.g. 3) and hit enter.
-It’ll then calculate the amount of:
 
-Water (200ml per cup)
-Milk (50ml per cup)
-Tea Leaves (1 tablespoon per cup)
-Sugar (2 teaspoons per cup)
+A set of simple, beginner-friendly programs written to calculate chai preparation ingredients, boda fare estimation, and mobile money transaction fees. Ideal for learners exploring user input, conditional logic, and arithmetic in programming.
 
-Example Output:
-If you enter 2, the output will be:
+ Project Description
 
+This project contains three mini applications:
+
+1. ChaiCalculator
+
+Calculates ingredients needed for a given number of cups of chai (tea).
+Prompt: Enter number of cups:
+Outputs:
+
+Water: 200ml per cup
+Milk: 50ml per cup
+Tea Leaves: 1 tbsp per cup
+Sugar: 2 tsp per cup
+Error Handling: Invalid input (e.g., text, negative numbers, or zero) is caught and a message is shown.
+
+Example:
+
+Enter number of cups: 2
 For 2 cup(s) of chai:
  Water: 400 ml
  Milk: 100 ml
  Tea Leaves: 2 tbsp
  Sugar: 4 tsp
 
-If you enter 0 or something that isn’t a number, it tells you it’s invalid.
 
+2.bodaFareCalculator
+Estimates the cost of a boda boda (motorbike taxi) ride based on distance.
 
+Prompt: "Unafika wapi Mkubwa? Kilometer ngapi?"
 
-
-
-In challenge two; bodaFareCalculator:
-
-When you run the code, a prompt will pop up asking:
-
-"Unafika wapi Mkubwa? Kilometer ngapi?"
-
-Just enter the number of kilometers you're traveling.
-
-If you put in an invalid number (like letters or a negative number), it tells you to try again.
-
-It calculates your fare using this formula:
-
+Formula:
 Base Fare: KES 50
-
 Charge per km: KES 15
+Error Handling: Handles invalid inputs gracefully.
 
-Then it shows you a breakdown like:
+Example:
+Unafika wapi Mkubwa? Kilometer ngapi?
+3
 
 Uko kwote? To ni 3 km:
 Ukikalia Pikipiki: KES 50
@@ -49,27 +50,33 @@ Total: KES 95
 Panda Pikipiki!
 
 
+3. mobileMoneyEstimator
+Calculates the transaction cost when sending mobile money.
 
+Prompt: Asks how much money you're sending.
 
-In challenge three; mobileMoneyEstimator:
+Fee Logic:
+1.5% of the amount
+Minimum fee: KES 10
+Maximum fee: KES 70
 
-This is a small JavaScript function that asks how much money you're sending, then calculates the transaction fee (1.5% of the amount).
-If the fee is less than or equal to 10, it charges KES 10.
-If the fee is more than 70, it caps at KES 70.
-Otherwise, it uses the actual 1.5% fee.
+Example Output:
+Amount: KES 500
+Transaction Fee: KES 10
+Total Charged: KES 510
+🛠 Setup Instructions
+Clone this repository or copy the code files to your local machine.
 
-It shows an alert with:
-The amount you're sending
-The transaction cost
-The total amount (what you'll be charged)
-T
-
-
-
-
-
-
+Run each file using a suitable interpreter:
 
 
 
+Author
+Name: [Feysal Abdi Dahir]
+Email: [yfeysal.dahir@moringaschool.com]
+GitHub: https://github.com/feysal51
+
+License
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute it as you wish.
 
